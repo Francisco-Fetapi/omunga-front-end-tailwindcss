@@ -6,13 +6,6 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["Roboto", "sans-serif"],
-      monospace: ["Nico Moji", "monospace"],
-    },
-    borderRadius: {
-      main: "25px",
-    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -22,6 +15,13 @@ module.exports = {
       colors: {
         purple: "#8571ff",
         white2: "#f8f8fa",
+      },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        monospace: ["Nico Moji", "monospace"],
+      },
+      borderRadius: {
+        main: "25px",
       },
     },
   },
