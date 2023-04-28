@@ -3,13 +3,15 @@ import Image from "next/image";
 import useHeaderLinks from "@/hooks/useHeaderLinks";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Button from "../Button/Button";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function Header({ children }: React.PropsWithChildren) {
   const links = useHeaderLinks();
   const { pathname } = useRouter();
 
   return (
-    <header className="h-[80px] bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
+    <header className="h-header bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
       <div>
         <Image src={OmungaPhoto} width={130} height={150} alt="Imagem Omunga" />
       </div>
@@ -32,7 +34,7 @@ export default function Header({ children }: React.PropsWithChildren) {
           </ul>
           <div className="ml-5 w-[35%] min-w-[140px] bg-purple h-full flex items-center justify-center">
             <Link href="iniciar-sessao">
-              <button>Entrar</button>
+              <Button iconEnd={<FaChevronRight />}>Entrar</Button>
             </Link>
           </div>
         </div>

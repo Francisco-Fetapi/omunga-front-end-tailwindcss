@@ -18,10 +18,14 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
-        monospace: ["Nico Moji", "monospace"],
+        mono: ["Nico Moji", "monospace"],
       },
       borderRadius: {
         main: "25px",
+      },
+      height: {
+        header: "80px",
+        screen_height_with_header: "calc(100vh - 80px)",
       },
     },
   },
