@@ -1,4 +1,4 @@
-interface ButtonProps {
+interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   /**
    * Button label
    */
@@ -22,12 +22,13 @@ export default function Button({
   fullWidth,
   iconEnd,
   iconStart,
+  ...props
 }: ButtonProps) {
   return (
     <button
-      className={` grid-flow-col gap-1 items-center text-white font-medium pl-5 pr-3 py-2 bg-black rounded-3xl ${
+      className={` grid-flow-col gap-1 items-center  text-white font-medium pl-5 pr-3 py-2 bg-black rounded-3xl ${
         fullWidth ? "flex w-full justify-center" : "inline-grid"
-      }`}
+      } ${props.className}`}
     >
       {iconStart && <>{iconStart}</>}
       {children}

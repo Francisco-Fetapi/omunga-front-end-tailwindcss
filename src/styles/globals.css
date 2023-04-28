@@ -31,3 +31,7 @@ body {
 .link_active {
   @apply font-bold border-b-[4px] border-purple;
 }
+
+.min-height {
+  min-height: 100vh - 80px;
+}

@@ -6,7 +6,7 @@ export default function SignIn() {
   return (
     <>
       <Header />
-      <main className="w-[100%] max-w-[400px] mx-auto  h-screen_height_with_header flex items-center justify-center flex-col">
+      <main className="w-[100%] max-w-[400px] min-height py-12 mx-auto flex items-center justify-center flex-col">
         <FormSignin />
       </main>
 
