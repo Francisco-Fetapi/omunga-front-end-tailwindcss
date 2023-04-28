@@ -9,7 +9,7 @@ export default function Header({ children }: React.PropsWithChildren) {
   const { pathname } = useRouter();
 
   return (
-    <header className="h-[80px] shadow-lg shadow-gray-300 flex items-center pl-16">
+    <header className="h-[80px] bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
       <div>
         <Image src={OmungaPhoto} width={130} height={150} alt="Imagem Omunga" />
       </div>
