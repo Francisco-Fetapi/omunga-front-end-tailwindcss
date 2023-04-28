@@ -26,7 +26,7 @@ export default function Button({
   return (
     <button
       className={` grid-flow-col gap-1 items-center text-white font-medium pl-5 pr-3 py-2 bg-black rounded-3xl ${
-        fullWidth ? "grid" : "inline-grid"
+        fullWidth ? "flex w-full justify-center" : "inline-grid"
       }`}
     >
       {iconStart && <>{iconStart}</>}
