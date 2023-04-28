@@ -43,7 +43,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* <div className="flex justify-end"> */}
       <div className="flex justify-end mt-5">
         <InputWithButton
           textButton="Pesquisar"
