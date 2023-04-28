@@ -27,6 +27,9 @@ module.exports = {
         header: "80px",
         screen_height_with_header: "calc(100vh - 80px)",
       },
+      gridTemplateColumns: {
+        footer: "auto 1fr",
+      },
     },
   },
   plugins: [],
