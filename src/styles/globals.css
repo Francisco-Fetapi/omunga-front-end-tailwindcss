@@ -16,6 +16,11 @@
   }
 }
 
+@font-face {
+  src: url("../../public/fonts/NicoMoji-Regular.ttf");
+  font-family: "Nico Moji";
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
