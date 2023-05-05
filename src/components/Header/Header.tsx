@@ -1,6 +1,7 @@
 import OmungaPhoto from "../../assets/Omunga.png";
 import Image from "next/image";
 import useHeaderLinks from "@/hooks/useHeaderLinks";
+// import useHeaderLinks from "../../hooks/useHeaderLinks";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Button from "../Button/Button";
