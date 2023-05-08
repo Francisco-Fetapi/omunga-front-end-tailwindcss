@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Header />
       <main className="w-[100%] max-w-[400px] min-height py-12 mx-auto flex items-center justify-center flex-col">
-        <h1 className="font-mono text-2xl">Omunga</h1>
+        <h1>Ola Mundo!</h1>
       </main>
 
       <Footer />

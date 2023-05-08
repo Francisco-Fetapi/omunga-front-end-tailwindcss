@@ -1,8 +1,7 @@
 import useFooterLinks from "@/hooks/useFooterLinks";
-import Image from "next/image";
 import Link from "next/link";
-import OmungaPhoto from "../../assets/Omunga.png";
 import InputWithButton from "../InputWithButton/InputWithButton";
+import OmungaLogo from "../OmungaLogo";
 
 export default function Footer() {
   const { links, titles } = useFooterLinks();
@@ -11,12 +10,7 @@ export default function Footer() {
     <footer className="h-[350px] bg-white px-12 py-[75px]">
       <div className="flex justify-between gap-10">
         <div className="flex flex-col gap-2 max-w-xs">
-          <Image
-            src={OmungaPhoto}
-            width={190}
-            height={210}
-            alt="Imagem Omunga"
-          />
+          <OmungaLogo />
           <p className="text-black/70 mt-3">
             É um projeto criado com o principal objetivo de incentivar a
             partilha de conteúdo por parte dos profissionais de TI em Angola.

@@ -1,11 +1,10 @@
-import OmungaPhoto from "../../assets/Omunga.png";
-import Image from "next/image";
 import useHeaderLinks from "@/hooks/useHeaderLinks";
 // import useHeaderLinks from "../../hooks/useHeaderLinks";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Button from "../Button/Button";
 import { FaChevronRight } from "react-icons/fa";
+import OmungaLogo from "../OmungaLogo";
 
 export default function Header({ children }: React.PropsWithChildren) {
   const links = useHeaderLinks();
@@ -14,7 +13,7 @@ export default function Header({ children }: React.PropsWithChildren) {
   return (
     <header className="h-header bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
       <div>
-        <Image src={OmungaPhoto} width={130} height={150} alt="Imagem Omunga" />
+        <OmungaLogo size="medium" />
       </div>
       <div className="grow" />
       <div className="grow h-full">
