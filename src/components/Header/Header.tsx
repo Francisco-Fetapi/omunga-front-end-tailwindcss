@@ -35,7 +35,7 @@ export default function Header() {
             ))}
           </ul>
           <div
-            className={`ml-12 ${sizeOfSideBarBackground} w-[45%] h-full flex items-center justify-center relative z-10`}
+            className={`ml-12 ${sizeOfSideBarBackground} w-[45%] h-full flex items-center justify-center relative z-10 bg-purple lg:bg-transparent`}
           >
             <Link href="iniciar-sessao">
               <Button iconEnd={<FaChevronRight />}>Entrar</Button>

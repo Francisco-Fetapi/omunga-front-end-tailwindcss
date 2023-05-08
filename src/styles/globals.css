@@ -40,3 +40,6 @@ body {
 .min-height {
   min-height: 100vh - 80px !important;
 }
+.social-media-ul {
+  @apply px-3 text-2xl;
+}

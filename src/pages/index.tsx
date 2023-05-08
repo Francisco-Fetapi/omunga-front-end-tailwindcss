@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ColoredSidebar isShort={false} />
+      <ColoredSidebar isShort={false} showIcon={true} />
       <main className="w-[100%] mx-auto min-height py-12  flex flex-col">
         <h1>Ola Mundo!</h1>
         <LoremIpsum />
