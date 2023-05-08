@@ -7,7 +7,7 @@ export default function Footer() {
   const { links, titles } = useFooterLinks();
 
   return (
-    <footer className="h-[350px] bg-white px-12 py-[75px]">
+    <footer className="h-[350px] bg-white px-12 py-[75px] relative z-10">
       <div className="flex justify-between gap-10">
         <div className="flex flex-col gap-2 max-w-xs">
           <OmungaLogo />

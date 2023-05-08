@@ -6,7 +6,9 @@ import Button from "../Button/Button";
 import { FaChevronRight } from "react-icons/fa";
 import OmungaLogo from "../OmungaLogo";
 
-export default function Header({ children }: React.PropsWithChildren) {
+export const sizeOfSideBarBackground = "min-w-[140px]";
+
+export default function Header() {
   const links = useHeaderLinks();
   const { pathname } = useRouter();
 
@@ -24,7 +26,7 @@ export default function Header({ children }: React.PropsWithChildren) {
                 key={link.href}
                 href={link.href}
                 passHref
-                className={`mx-3 h-full text-lg flex items-center ${
+                className={`mx-5 h-full text-sm flex items-center ${
                   pathname === link.href ? "link_active" : ""
                 }`}
               >
@@ -32,7 +34,9 @@ export default function Header({ children }: React.PropsWithChildren) {
               </Link>
             ))}
           </ul>
-          <div className="ml-5 w-[35%] min-w-[140px] bg-purple h-full flex items-center justify-center">
+          <div
+            className={`ml-12 ${sizeOfSideBarBackground} w-[45%] h-full flex items-center justify-center relative z-10`}
+          >
             <Link href="iniciar-sessao">
               <Button iconEnd={<FaChevronRight />}>Entrar</Button>
             </Link>
