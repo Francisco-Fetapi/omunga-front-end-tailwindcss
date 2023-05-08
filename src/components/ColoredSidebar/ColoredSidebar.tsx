@@ -7,11 +7,13 @@ import SocialMediaList from "../SocialMediaList/SocialMediaList";
 interface ColoredSidebarProps {
   isShort?: boolean;
   showIcon?: boolean;
+  showSocialMedia?: boolean;
 }
 
 export default function ColoredSidebar({
   isShort = true,
   showIcon = false,
+  showSocialMedia = false,
 }: ColoredSidebarProps) {
   return (
     <div
