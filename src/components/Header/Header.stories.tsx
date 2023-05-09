@@ -16,8 +16,8 @@ const meta: Meta<typeof Header> = {
 
 type Story = StoryObj<typeof Header>;
 
-export const Primary = () => <Header>Primary</Header>;
-export const Secondary = () => <Header>Secondary</Header>;
-export const Tertiary = () => <Header>Tertiary</Header>;
+export const Primary = () => <Header />;
+// export const Secondary = () => <Header>Secondary</Header>;
+// export const Tertiary = () => <Header>Tertiary</Header>;
 
 export default meta;
