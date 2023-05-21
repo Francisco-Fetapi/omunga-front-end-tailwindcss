@@ -1,15 +1,16 @@
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import HomeHeroHeader from "@/components/HomeHeroHeader/HomeHeroHeader";
 
 export default function Home() {
   return (
     <>
       <Header />
       <ColoredSidebar isShort={false} showIcon={true} />
-      <main className="w-[100%] mx-auto min-height py-12  flex flex-col">
-        <h1>Ola Mundo!</h1>
-        <LoremIpsum />
+      <main className="main">
+        <HomeHeroHeader />
+        {/* <LoremIpsum /> */}
       </main>
 
       <Footer />

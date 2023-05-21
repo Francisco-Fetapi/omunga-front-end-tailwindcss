@@ -8,7 +8,7 @@ export default function Articles() {
     <>
       <Header />
       <ColoredSidebar isShort={false} showIcon={true} />
-      <main className="w-[100%] min-height py-12 mx-auto flex items-center justify-center flex-col">
+      <main className="main flex items-center justify-center">
         <h1>Artigos!</h1>
         <LoremIpsum />
       </main>

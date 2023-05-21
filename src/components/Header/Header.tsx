@@ -11,7 +11,7 @@ export const sizeOfSideBarBackground = "min-w-[140px]";
 export default function Header() {
   const links = useHeaderLinks();
   const { pathname } = useRouter();
-
+  // TODO: Router Transition implement. use some lib
   return (
     <header className="h-header bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
       <div>
