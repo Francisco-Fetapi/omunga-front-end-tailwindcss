@@ -1,7 +1,8 @@
 import Button from "../Button/Button";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { mockArticles } from "@/mocks/ArticlesMock";
 import ArticleItem from "./ArticleItem";
+import ArticlesPagination from "./ArticlesPagination";
 
 export default function ListArticles() {
   return (
@@ -19,6 +20,8 @@ export default function ListArticles() {
           ))}
         </div>
       </div>
+
+      <ArticlesPagination />
     </div>
   );
 }
