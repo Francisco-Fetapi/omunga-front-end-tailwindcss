@@ -8,7 +8,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2021, 4, 27),
     user: usersMock[0],
-    posterImage: "./",
+    posterImage: "/bigtech.png",
   },
   {
     id: "2",
@@ -16,7 +16,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2019, 3, 13),
     user: usersMock[1],
-    posterImage: "./",
+    posterImage: "/javascript.png",
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2023, 1, 20),
     user: usersMock[2],
-    posterImage: "./",
+    posterImage: "/africell.png",
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2022, 8, 9),
     user: usersMock[3],
-    posterImage: "./",
+    posterImage: "/java.png",
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2023, 4, 28),
     user: usersMock[4],
-    posterImage: "./",
+    posterImage: "/devops.png",
   },
   {
     id: "6",
@@ -50,6 +50,6 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2020, 4, 15),
     user: usersMock[5],
-    posterImage: "./",
+    posterImage: "/bigtech.png",
   },
 ];

@@ -1,7 +1,7 @@
 import { Article } from "@/entities/Article";
 import Image from "next/image";
-import Button from "../Button/Button";
 import FollowButton from "../Button/FollowButton";
+import { MdOutlineThumbUp, MdOutlineComment } from "react-icons/md";
 
 interface ArticleItem {
   article: Article;
@@ -10,7 +10,7 @@ interface ArticleItem {
 export default function ArticleItem({ article }: ArticleItem) {
   const followed = +article.id % 2 === 0;
   return (
-    <div className="h-[380px] bg-white shadow-2xl rounded-xl flex flex-col px-2 py-5">
+    <div className="h-[400px] bg-white shadow-2xl rounded-xl flex flex-col px-3 py-5 select-none">
       <div>
         <div className="flex items-center gap-3">
           <div>
@@ -35,9 +35,22 @@ export default function ArticleItem({ article }: ArticleItem) {
       </div>
       <div className="grow mt-3">
         <h2 className="font-bold text-black/80 text-md">{article.title}</h2>
+        <br />
+        <Image
+          width={380}
+          height={380}
+          src={article.posterImage}
+          alt={article.title}
+          style={{
+            borderRadius: 10,
+          }}
+        />
       </div>
       <div>
-        <p>o</p>
+        <div className="ml-1 mt-2 flex items-center gap-4">
+          <MdOutlineThumbUp size={24} className="icon-button" />
+          <MdOutlineComment size={24} className="icon-button" />
+        </div>
       </div>
     </div>
   );
