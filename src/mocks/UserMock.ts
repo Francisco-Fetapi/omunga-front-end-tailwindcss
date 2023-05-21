@@ -1,11 +1,11 @@
 import { User } from "@/entities/User";
 
-export const usersMock: Omit<User, "id">[] = [
-  { name: "Franciso Fetapi", profilePhoto: "./francisco.jpg" },
-  { name: "Eduardo Flávio", profilePhoto: "./eduardoflavio.jpg" },
-  { name: "Felipe Manuel", profilePhoto: "./felipe.jpg" },
-  { name: "Carlos Bumba", profilePhoto: "./carlos.jpg" },
-  { name: "Paulo Manuel", profilePhoto: "./paulo.jpg" },
-  { name: "Lázaro Campos", profilePhoto: "./lazaro.jpg" },
-  { name: "Antónia Carlos", profilePhoto: "./antonia.jpg" },
+export const usersMock: User[] = [
+  { id: "1", name: "Franciso Fetapi", profilePhoto: "./francisco.jpg" },
+  { id: "2", name: "Eduardo Flávio", profilePhoto: "./eduardoflavio.jpg" },
+  { id: "3", name: "Felipe Manuel", profilePhoto: "./felipe.jpg" },
+  { id: "4", name: "Carlos Bumba", profilePhoto: "./carlos.jpg" },
+  { id: "5", name: "Paulo Manuel", profilePhoto: "./paulo.jpg" },
+  { id: "6", name: "Lázaro Campos", profilePhoto: "./lazaro.jpg" },
+  { id: "7", name: "Antónia Carlos", profilePhoto: "./antonia.jpg" },
 ];
