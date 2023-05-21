@@ -1,6 +1,7 @@
 import { User } from "./User";
 
 export interface Article {
+  id: string;
   /**
    * Title to describe the article.
    */
@@ -22,5 +23,5 @@ export interface Article {
   /**
    * The last updating.
    */
-  updatedAt: Date;
+  updatedAt?: Date;
 }
