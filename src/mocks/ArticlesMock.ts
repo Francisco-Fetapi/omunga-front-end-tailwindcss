@@ -8,6 +8,7 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2021, 4, 27),
     user: usersMock[0],
+    posterImage: "./",
   },
   {
     id: "2",
@@ -15,13 +16,15 @@ export const mockArticles: Article[] = [
     content: "",
     createdAt: new Date(2019, 3, 13),
     user: usersMock[1],
+    posterImage: "./",
   },
   {
     id: "3",
     title: "Entenda porque internet grátis funciona com Africell.",
     content: "",
     createdAt: new Date(2023, 1, 20),
-    user: usersMock[0],
+    user: usersMock[2],
+    posterImage: "./",
   },
   {
     id: "4",
@@ -29,7 +32,8 @@ export const mockArticles: Article[] = [
       "8 coisas que você precisa saber do Java antes de partir para o Kotlin",
     content: "",
     createdAt: new Date(2022, 8, 9),
-    user: usersMock[0],
+    user: usersMock[3],
+    posterImage: "./",
   },
   {
     id: "5",
@@ -37,13 +41,15 @@ export const mockArticles: Article[] = [
       "Entenda os procedimentos necessário para configurar um ambiente DevOps",
     content: "",
     createdAt: new Date(2023, 4, 28),
-    user: usersMock[0],
+    user: usersMock[4],
+    posterImage: "./",
   },
   {
     id: "6",
     title: "Plano de Carreira e vagas em Big Techs.",
     content: "",
     createdAt: new Date(2020, 4, 15),
-    user: usersMock[0],
+    user: usersMock[5],
+    posterImage: "./",
   },
 ];

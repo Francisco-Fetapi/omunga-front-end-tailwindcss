@@ -12,6 +12,11 @@ export interface Article {
   content: string;
 
   /**
+   * An image to serve as a poster of article.
+   */
+  posterImage: string;
+
+  /**
    * The article owner.
    */
   user: User;
