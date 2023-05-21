@@ -1,10 +1,14 @@
 import ArticleHeader from "./ArticleHeader";
 import ListArticles from "./ListArticles";
 
-export default function Articles() {
+interface ArticlesProps {
+  showHeader?: boolean;
+}
+
+export default function Articles({ showHeader = true }: ArticlesProps) {
   return (
     <div className="gap-lr">
-      <ArticleHeader />
+      {showHeader && <ArticleHeader />}
       <ListArticles />
     </div>
   );

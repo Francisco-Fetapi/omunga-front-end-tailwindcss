@@ -10,7 +10,6 @@ export default function AboutUs() {
       <ColoredSidebar isShort={false} showIcon={true} />
       <main className="w-[100%] min-height py-12 mx-auto flex items-center justify-center flex-col">
         <h1>Sobre</h1>
-        <LoremIpsum />
       </main>
 
       <Footer />
