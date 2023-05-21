@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import Articles from "@/components/Articles/Articles";
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -11,12 +11,7 @@ export default function Home() {
       <ColoredSidebar isShort={false} showIcon={true} />
       <main className="main">
         <HomeHeroHeader />
-        {/* <LoremIpsum /> */}
-        <div style={{ width: 180 }}>
-          <Button variant="white" shadow>
-            Filtrar por
-          </Button>
-        </div>
+        <Articles />
       </main>
 
       <Footer />

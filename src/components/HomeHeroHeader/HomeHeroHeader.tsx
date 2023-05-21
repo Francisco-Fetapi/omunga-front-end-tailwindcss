@@ -2,7 +2,7 @@ import InputWithButton from "../InputWithButton/InputWithButton";
 
 export default function HomeHeroHeader() {
   return (
-    <div className="min-height pl-[100px] flex flex-col justify-center w-[100%] max-w-[570px]">
+    <div className="min-height gap-l flex flex-col justify-center w-[100%] max-w-[570px]">
       <h1 className="text-6xl">
         O <span className="text-purple">saber</span> não
         <br /> ocupa espaço

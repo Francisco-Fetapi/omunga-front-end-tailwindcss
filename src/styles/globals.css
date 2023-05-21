@@ -56,3 +56,13 @@ body {
 .button-shadow {
   @apply shadow-lg;
 }
+.gap-l {
+  padding-left: 100px;
+}
+.gap-r {
+  padding-right: 100px;
+}
+.gap-lr {
+  padding-right: 100px;
+  padding-left: 100px;
+}
