@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -11,6 +12,11 @@ export default function Home() {
       <main className="main">
         <HomeHeroHeader />
         {/* <LoremIpsum /> */}
+        <div style={{ width: 180 }}>
+          <Button variant="white" shadow>
+            Filtrar por
+          </Button>
+        </div>
       </main>
 
       <Footer />

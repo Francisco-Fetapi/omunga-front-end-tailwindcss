@@ -15,6 +15,13 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
    * Define a icon to be showed at the left of button.
    */
   iconStart?: React.ReactNode;
+
+  /**
+   * Define the type (basically the background-color) of button
+   */
+  variant?: "black" | "white";
+
+  shadow?: boolean;
 }
 
 export default function Button({
@@ -22,11 +29,15 @@ export default function Button({
   fullWidth,
   iconEnd,
   iconStart,
+  variant = "black",
+  shadow = false,
   ...props
 }: ButtonProps) {
   return (
     <button
-      className={` grid-flow-col gap-1 items-center  text-white font-medium pl-5 pr-3 py-2 bg-black rounded-3xl ${
+      className={`grid-flow-col gap-1 items-center  button-${variant} ${
+        shadow ? "button-shadow" : ""
+      } font-medium pl-5 pr-3 py-2 rounded-3xl ${
         fullWidth ? "flex w-full justify-center" : "inline-grid"
       } ${props.className}`}
     >

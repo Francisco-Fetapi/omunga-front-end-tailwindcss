@@ -46,3 +46,13 @@ body {
 .main {
   @apply w-[100%] min-height py-12  flex flex-col;
 }
+
+.button-black {
+  @apply bg-black text-white;
+}
+.button-white {
+  @apply bg-white text-black shadow-black/80 font-normal;
+}
+.button-shadow {
+  @apply shadow-lg;
+}
