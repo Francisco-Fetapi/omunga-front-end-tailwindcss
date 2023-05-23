@@ -49,14 +49,13 @@ body {
   @apply shadow-lg;
 }
 .gap-l {
-  padding-left: 100px;
+  @apply sm:pl-[20px] xl:pl-[100px];
 }
 .gap-r {
-  padding-right: 100px;
+  @apply sm:pr-[20px] xl:pr-[100px];
 }
 .gap-lr {
-  padding-right: 100px;
-  padding-left: 100px;
+  @apply gap-l gap-r;
 }
 
 .icon-button {

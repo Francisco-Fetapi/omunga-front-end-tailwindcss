@@ -15,7 +15,7 @@ export default function HeroHeader({ content, title }: HeroHeaderProps) {
       <br />
       <p className="text-gray-500 text-lg">{content}</p>
       <br />
-      <div className="w-[95%]">
+      <div className="w-[95%] max-w-[450px]">
         <InputWithButton
           textButton="Pesquisar"
           placeholder="pesquise por um assunto"

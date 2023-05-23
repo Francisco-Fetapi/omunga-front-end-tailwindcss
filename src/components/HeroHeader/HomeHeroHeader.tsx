@@ -2,7 +2,7 @@ import HeroHeader from ".";
 
 export default function HomeHeroHeader() {
   return (
-    <div className="min-height">
+    <div className="min-height flex items-center">
       <HeroHeader
         title={
           <>

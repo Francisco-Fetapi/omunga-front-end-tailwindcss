@@ -11,7 +11,7 @@ export default function ArticleItem({ article }: ArticleItem) {
   const followed = +article.id % 2 === 0;
 
   return (
-    <div className="h-[400px] bg-white shadow-2xl rounded-xl flex flex-col px-3 py-5 select-none">
+    <div className="min-h-[400px] mx-auto w-[100%] max-w-[400px] bg-white shadow-2xl rounded-xl flex flex-col px-3 py-5 select-none">
       <div>
         <div className="flex items-center gap-3">
           <div>
