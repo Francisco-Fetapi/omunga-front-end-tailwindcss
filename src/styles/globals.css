@@ -65,3 +65,6 @@ body {
 .img-bordered {
   @apply border-white2 border-[3px] border-solid shadow-sm shadow-black/80;
 }
+.h-simple-header {
+  height: 70vh;
+}

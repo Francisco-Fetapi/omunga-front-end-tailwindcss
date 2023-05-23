@@ -8,7 +8,9 @@ interface HeroHeaderProps {
 
 export default function HeroHeader({ content, title }: HeroHeaderProps) {
   return (
-    <div className="min-height gap-l flex flex-col justify-center w-[100%] max-w-[570px]">
+    <div
+      className={`h-full gap-l flex flex-col justify-center w-[100%] max-w-[570px]`}
+    >
       <h1 className="text-6xl">{title}</h1>
       <br />
       <p className="text-gray-500 text-lg">{content}</p>
