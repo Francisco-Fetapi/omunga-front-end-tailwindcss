@@ -2,6 +2,7 @@ import { Article } from "@/entities/Article";
 import Image from "next/image";
 import FollowButton from "../Button/FollowButton";
 import { MdOutlineThumbUp, MdOutlineComment } from "react-icons/md";
+import Link from "next/link";
 
 interface ArticleItem {
   article: Article;
@@ -36,17 +37,19 @@ export default function ArticleItem({ article }: ArticleItem) {
         </div>
       </div>
       <div className="grow mt-3">
-        <h2 className="font-bold text-black/80 text-md">{article.title}</h2>
-        <br />
-        <Image
-          width={380}
-          height={380}
-          src={article.posterImage}
-          alt={article.title}
-          style={{
-            borderRadius: 10,
-          }}
-        />
+        <Link href={`/artigos/${article.id}`}>
+          <h2 className="font-bold text-black/80 text-md">{article.title}</h2>
+          <br />
+          <Image
+            width={380}
+            height={380}
+            src={article.posterImage}
+            alt={article.title}
+            style={{
+              borderRadius: 10,
+            }}
+          />
+        </Link>
       </div>
       <div>
         <div className="ml-1 mt-2 flex items-center gap-4">
