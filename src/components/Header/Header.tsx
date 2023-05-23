@@ -5,12 +5,14 @@ import Link from "next/link";
 import Button from "../Button/Button";
 import { FaChevronRight } from "react-icons/fa";
 import OmungaLogo from "../OmungaLogo";
+import useAuth from "@/hooks/useAuth";
 
 export const sizeOfSideBarBackground = "min-w-[140px]";
 
 export default function Header() {
   const links = useHeaderLinks();
   const { pathname } = useRouter();
+  const { logged } = useAuth();
   // TODO: Router Transition implement. use some lib
   return (
     <header className="h-header bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
@@ -37,9 +39,12 @@ export default function Header() {
           <div
             className={`ml-12 ${sizeOfSideBarBackground} w-[45%] h-full flex items-center justify-center relative z-10 bg-purple lg:bg-transparent`}
           >
-            <Link href="iniciar-sessao">
-              <Button iconEnd={<FaChevronRight />}>Entrar</Button>
-            </Link>
+            {!logged && (
+              <Link href="iniciar-sessao">
+                <Button iconEnd={<FaChevronRight />}>Entrar</Button>
+              </Link>
+            )}
+            {logged && <Button iconEnd={<FaChevronRight />}>Postar</Button>}
           </div>
         </div>
       </div>
