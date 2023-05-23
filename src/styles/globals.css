@@ -67,3 +67,6 @@ body {
 .h-simple-header {
   height: 70vh;
 }
+.article-user-grid {
+  grid-template-columns: 3fr 1fr;
+}
