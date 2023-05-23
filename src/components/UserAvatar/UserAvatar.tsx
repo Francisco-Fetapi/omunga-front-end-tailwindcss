@@ -7,7 +7,7 @@ export default function UserAvatar() {
     <img
       src={user.profilePhoto}
       alt="Foto de perfil do usuario logado"
-      className="w-[45px] h-[45px] rounded-[50%] ml-[-20px] mt-[15px]"
+      className="w-[45px] h-[45px] rounded-[50%] ml-[-20px] mt-[15px] img-bordered"
     />
   );
 }

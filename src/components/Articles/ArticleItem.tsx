@@ -18,9 +18,10 @@ export default function ArticleItem({ article }: ArticleItem) {
             <Image
               src={article.user.profilePhoto}
               alt={`Foto do perfil do usuario ${article.user.name}`}
-              width={35}
-              height={35}
+              width={40}
+              height={40}
               style={{ borderRadius: "50%" }}
+              className="img-bordered "
             />
           </div>
           <div className="grow">

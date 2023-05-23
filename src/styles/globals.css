@@ -62,3 +62,6 @@ body {
 .icon-button {
   @apply text-gray-600 hover:opacity-80 active:opacity-70 cursor-pointer;
 }
+.img-bordered {
+  @apply border-white2 border-[3px] border-solid shadow-sm shadow-black/80;
+}
