@@ -1,13 +1,15 @@
 import ArticleThumbnail from "@/components/ArticleThumbnail/ArticleThumbnail";
+import Button from "@/components/Button/Button";
 import FollowButton from "@/components/Button/FollowButton";
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import useArticles from "@/hooks/useArticles";
 import { mockArticles } from "@/mocks/ArticlesMock";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaChevronRight, FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 export default function ArticlesPage() {
   const { query } = useRouter();
@@ -140,9 +142,28 @@ export default function ArticlesPage() {
                 <br />
 
                 {articles.map((article) => (
-                  <ArticleThumbnail article={article} key={article.id} />
+                  <div className="grid gap-4" key={article.id}>
+                    {/* Only for test purposes */}
+                    {/* TODO: remove all fakes occurrences and show only one ArticleThumbnail. */}
+                    <ArticleThumbnail article={article} />
+                    <ArticleThumbnail article={article} />
+                    <ArticleThumbnail article={article} />
+                  </div>
                 ))}
               </div>
+
+              <br />
+              <br />
+              <div className="flex justify-center">
+                <Link href={`/perfil/${author?.id}`}>
+                  <Button variant="white" shadow iconEnd={<FaChevronRight />}>
+                    <span className="font-bold">Ver Todos</span>
+                  </Button>
+                </Link>
+              </div>
+              {/* TODO: add comments section */}
+
+              {/* TODO: add social media links in some pages, content fixed. */}
             </div>
           </div>
         )}
