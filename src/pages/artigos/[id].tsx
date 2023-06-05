@@ -1,7 +1,9 @@
+import ArticleThumbnail from "@/components/ArticleThumbnail/ArticleThumbnail";
 import FollowButton from "@/components/Button/FollowButton";
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import useArticles from "@/hooks/useArticles";
 import { mockArticles } from "@/mocks/ArticlesMock";
 import { useRouter } from "next/router";
 
@@ -13,6 +15,9 @@ export default function ArticlesPage() {
   const currentArticle = mockArticles.find((article) => article.id === id);
   const author = currentArticle?.user;
   const followed = +(currentArticle?.id || 0) % 2 === 0;
+
+  const { getArticlesFromUser } = useArticles();
+  const articles = getArticlesFromUser(author);
 
   return (
     <>
@@ -132,6 +137,11 @@ export default function ArticlesPage() {
                 <h2 className="font-bold text-lg">
                   Mais artigos de {author?.name.split(" ")[0]}
                 </h2>
+                <br />
+
+                {articles.map((article) => (
+                  <ArticleThumbnail article={article} key={article.id} />
+                ))}
               </div>
             </div>
           </div>
