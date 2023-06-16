@@ -1,3 +1,4 @@
+import CommentSection from "@/components/Articles/CommentSection";
 import ArticleThumbnail from "@/components/ArticleThumbnail/ArticleThumbnail";
 import Button from "@/components/Button/Button";
 import FollowButton from "@/components/Button/FollowButton";
@@ -104,6 +105,8 @@ export default function ArticlesPage() {
                     In eu dui molestie, molestie lectus eu, semper lectus.
                   </p>
                 </div>
+
+                <CommentSection />
               </div>
             </div>
             <div className="hidden lg:block relative min-w-[310px]">
