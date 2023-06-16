@@ -1,39 +1,43 @@
 import { usePagination } from "@mantine/hooks";
-import { FaChevronDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function ArticlesPagination() {
   const pagination = usePagination({ total: 10, initialPage: 1 });
   const currentPage = pagination.active;
 
   return (
-    <div className="mt-8 flex items-center justify-end select-none">
+    <div className="mt-12 flex items-center justify-end select-none">
       <div className="flex items-center gap-2">
-        <div>
+        <div className="join">
+          <button
+            className="join-item btn btn-primary text-white"
+            onClick={() => pagination.setPage(currentPage - 1)}
+          >
+            <FaChevronLeft />
+          </button>
           {pagination.range.map((page, k) => (
-            <span
-              className={` px-2 text-lg ${
-                page === currentPage ? "text-purple" : "text-gray-500"
-              } ${page !== "dots" ? "cursor-pointer" : ""}`}
+            <button
+              className={` join-item btn btn-square ${
+                page !== "dots" ? "cursor-pointer" : ""
+              }
+              ${currentPage === page ? "!bg-black text-white" : ""}
+              `}
               onClick={
                 page !== "dots" ? () => pagination.setPage(page) : undefined
               }
               key={k}
+              name="options"
+              aria-label="1"
             >
               {page === "dots" ? "..." : page}
-            </span>
+            </button>
           ))}
-        </div>
-        <div className="bg-white rounded-3xl px-1 py-2 shadow-md shadow-black/50 width-[150px] ">
-          <div className="flex gap-5 items-center">
-            <FaChevronLeft
-              className="cursor-pointer text-gray-500"
-              onClick={pagination.previous}
-            />
-            <FaChevronRight
-              className="cursor-pointer text-gray-500"
-              onClick={pagination.next}
-            />
-          </div>
+          <button
+            className="join-item btn btn-primary text-white"
+            onClick={() => pagination.setPage(currentPage + 1)}
+          >
+            <FaChevronRight />
+          </button>
         </div>
       </div>
     </div>
