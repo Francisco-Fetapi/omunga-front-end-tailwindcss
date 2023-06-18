@@ -1,19 +1,17 @@
-import Articles from "@/components/Articles";
 import ColoredSidebar from "@/components/ColoredSidebar/ColoredSidebar";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import HomeHeroHeader from "@/components/HeroHeader/HomeHeroHeader";
+import ForumHeroHeader from "@/components/HeroHeader/ForumHeroHeader";
 
-export default function Home() {
+export default function ForumPage() {
   return (
     <>
       <Header />
-      <ColoredSidebar isShort={false} showIcon={true} />
+      <ColoredSidebar isSimple={true} isShort={false} showIcon={true} />
       <main className="main">
-        <HomeHeroHeader />
-        <Articles />
+        <ForumHeroHeader />
+        <div className="lg:mt-[-80px]">{/* <h1>Ola Mundo!</h1> */}</div>
       </main>
-
       <Footer />
     </>
   );
