@@ -3,6 +3,7 @@ import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Button from "../Button/Button";
 import QuestionCard from "./QuestionCard";
+import QuestionsPagination from "./QuestionsPagination";
 
 export default function ListQuestions() {
   return (
@@ -19,6 +20,10 @@ export default function ListQuestions() {
             <QuestionCard question={question} key={question.id} />
           ))}
         </div>
+      </div>
+
+      <div className="mt-4">
+        <QuestionsPagination />
       </div>
     </div>
   );
