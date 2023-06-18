@@ -5,6 +5,7 @@ import ArticleItem from "./ArticleItem";
 import ArticlesPagination from "./ArticlesPagination";
 
 export default function ListArticles() {
+  // TODO: list articles filtered. /q=search_query
   return (
     <div>
       <div className="flex justify-end">

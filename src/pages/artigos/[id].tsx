@@ -22,6 +22,8 @@ export default function ArticlesPage() {
   const { getArticlesFromUser } = useArticles();
   const articles = getArticlesFromUser(author);
 
+  //TODO: Sidebar fixed on scroll get to it
+
   return (
     <>
       <Header />

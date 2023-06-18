@@ -5,6 +5,8 @@ import Header from "@/components/Header/Header";
 import ForumHeroHeader from "@/components/HeroHeader/ForumHeroHeader";
 
 export default function ForumPage() {
+  // TODO: create page to show question in details
+  // Add comments for the question also.
   return (
     <>
       <Header />

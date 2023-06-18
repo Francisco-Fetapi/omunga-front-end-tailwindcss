@@ -6,6 +6,7 @@ import QuestionCard from "./QuestionCard";
 import QuestionsPagination from "./QuestionsPagination";
 
 export default function ListQuestions() {
+  // TODO: list questions filtered. /q=search_query
   return (
     <div className="gap-lr ">
       <div className="flex justify-end">

@@ -2,6 +2,9 @@ import { FaComments, FaThumbsUp } from "react-icons/fa";
 import Button from "../Button/Button";
 
 export default function CommentSection() {
+  // TODO: list comments. Create Comment Component. daisyUi Docs.
+  // TODO: add num. likes and comments on article mock
+
   return (
     <div className="mt-8">
       <div className="flex flex-col w-full border-opacity-50">
