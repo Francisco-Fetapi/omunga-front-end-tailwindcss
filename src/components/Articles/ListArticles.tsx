@@ -3,9 +3,13 @@ import { FaChevronDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { mockArticles } from "@/mocks/ArticlesMock";
 import ArticleItem from "./ArticleItem";
 import ArticlesPagination from "./ArticlesPagination";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function ListArticles() {
   // TODO: list articles filtered. /q=search_query
+  const router = useRouter();
+  const isHome = router.pathname === "/";
   return (
     <div>
       <div className="flex justify-end">
@@ -22,7 +26,17 @@ export default function ListArticles() {
         </div>
       </div>
 
-      <ArticlesPagination />
+      {isHome ? (
+        <div className="my-8 flex justify-center items-center">
+          <Link href="/artigos">
+            <Button variant="white" shadow iconEnd={<FaChevronRight />}>
+              Ver mais &nbsp;
+            </Button>
+          </Link>
+        </div>
+      ) : (
+        <ArticlesPagination />
+      )}
     </div>
   );
 }
