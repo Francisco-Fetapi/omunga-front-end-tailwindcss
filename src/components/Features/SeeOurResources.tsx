@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { usersMock } from "@/mocks/UserMock";
+import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import Button from "../Button/Button";
 
@@ -72,7 +73,9 @@ export default function SeeOurResources() {
         </div>
 
         <div className="mt-6">
-          <Button iconEnd={<FaChevronRight />}>Começar </Button>
+          <Link href="/iniciar-sessao">
+            <Button iconEnd={<FaChevronRight />}>Começar </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ export default function Header() {
   const links = useHeaderLinks();
   const { pathname } = useRouter();
   const { logged } = useAuth();
+  const isOnLoginPage = pathname === "/iniciar-sessao";
   // TODO: Router Transition implement. use some lib
   return (
     <header className="h-header bg-white shadow-lg shadow-gray-300 flex items-center pl-16">
@@ -40,8 +41,10 @@ export default function Header() {
             className={`ml-12 ${sizeOfSideBarBackground} w-[45%] h-full flex items-center justify-center relative z-10 bg-purple lg:bg-transparent`}
           >
             {!logged && (
-              <Link href="iniciar-sessao">
-                <Button iconEnd={<FaChevronRight />}>Entrar</Button>
+              <Link href={isOnLoginPage ? "/criar-conta" : "/iniciar-sessao"}>
+                <Button iconEnd={<FaChevronRight />}>
+                  {isOnLoginPage ? "Registrar-se" : "Entrar"}
+                </Button>
               </Link>
             )}
             {logged && <Button iconEnd={<FaChevronRight />}>Postar</Button>}

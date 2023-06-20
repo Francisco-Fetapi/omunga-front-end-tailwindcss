@@ -43,8 +43,6 @@ export default function Footer() {
           placeholder="Pesquise por um assunto"
         />
       </div>
-
-      {/* TODO: Link to logout/login */}
     </footer>
   );
 }

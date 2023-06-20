@@ -1,7 +1,12 @@
+import { Article } from "@/entities/Article";
 import { FaComments, FaThumbsUp } from "react-icons/fa";
 import Button from "../Button/Button";
 
-export default function CommentSection() {
+interface CommentSectionProps {
+  article: Article;
+}
+
+export default function CommentSection({ article }: CommentSectionProps) {
   // TODO: list comments. Create Comment Component. daisyUi Docs.
   // TODO: add num. likes and comments on article mock
 
@@ -16,14 +21,16 @@ export default function CommentSection() {
               <div>
                 <FaThumbsUp />
               </div>
-              <span className="mt-[4px] font-bold text-md">2</span>
+              <span className="mt-[4px] font-bold text-md">
+                {article.likes}
+              </span>
             </div>
             <div className="divider divider-horizontal"></div>
             <div className="flex items-center gap-2">
               <div>
                 <FaComments />
               </div>
-              <span className="font-bold text-md">12</span>
+              <span className="font-bold text-md">{article.comments}</span>
             </div>
           </div>
 

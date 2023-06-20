@@ -14,7 +14,7 @@ import Input from "@/components/Input/Input";
 export default function FormSignUp() {
   return (
     <>
-      <h1 className="text-2xl font-bold mb-3">Registrar</h1>
+      <h1 className="text-2xl font-bold mb-3">Registrar-se</h1>
       <p className="text-gray-400">Crie a sua conta Omunga e desfrute já</p>
       <div className="flex gap-2 mt-8">
         <div>

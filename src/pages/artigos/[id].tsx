@@ -108,7 +108,7 @@ export default function ArticlesPage() {
                   </p>
                 </div>
 
-                <CommentSection />
+                <CommentSection article={currentArticle} />
               </div>
             </div>
             <div className="hidden lg:block relative min-w-[310px]">

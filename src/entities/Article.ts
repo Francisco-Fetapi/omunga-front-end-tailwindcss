@@ -29,4 +29,12 @@ export interface Article {
    * The last updating.
    */
   updatedAt?: Date;
+  /**
+   * Number of likes from users.
+   */
+  likes: number;
+  /**
+   * Number of comments from users.
+   */
+  comments: number;
 }
