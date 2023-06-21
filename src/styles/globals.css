@@ -21,6 +21,11 @@
   font-family: "Nico Moji";
 }
 
+body,
+html {
+  display: grid;
+}
+
 body {
   @apply bg-gray-100;
 }

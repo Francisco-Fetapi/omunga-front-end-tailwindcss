@@ -17,7 +17,7 @@ export default function CommentSection({ article }: CommentSectionProps) {
         <div className="divider font-bold text-lg">Seção de Comentários</div>
 
         <div>
-          <div className="flex gap-5 justify-end mb-3">
+          <div className="flex gap-1 justify-end mb-3">
             <div className="flex items-center gap-2">
               <div>
                 <FaThumbsUp />

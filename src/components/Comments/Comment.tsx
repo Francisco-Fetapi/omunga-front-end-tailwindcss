@@ -9,14 +9,17 @@ interface CommentProps {
 }
 
 export default function Comment({ comment }: CommentProps) {
+  // TODO: list answers for comments that have at least one.
   return (
-    <div className="chat chat-start my-8">
+    <div className="chat chat-start">
       <div className="chat-image avatar">
         <div className="w-10 rounded-full">
-          <img
-            src={comment.user.profilePhoto}
-            alt="Foto de perfil do usuario."
-          />
+          <Link href={`/profile/${comment.user.id}`}>
+            <img
+              src={comment.user.profilePhoto}
+              alt="Foto de perfil do usuario."
+            />
+          </Link>
         </div>
       </div>
       <div className="chat-header pl-2 items-center">
