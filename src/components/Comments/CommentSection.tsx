@@ -8,9 +8,6 @@ interface CommentSectionProps {
 }
 
 export default function CommentSection({ article }: CommentSectionProps) {
-  // TODO: list comments. Create Comment Component. daisyUi Docs.
-  // TODO: add num. likes and comments on article mock
-
   return (
     <div className="mt-8">
       <div className="flex flex-col w-full border-opacity-50">

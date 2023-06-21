@@ -55,9 +55,11 @@ body {
 }
 .gap-l {
   @apply sm:pl-[20px] xl:pl-[100px];
+  @apply sm:left-[15px] xl:left-[70px];
 }
 .gap-r {
   @apply sm:pr-[20px] xl:pr-[100px];
+  @apply sm:right-[15px] xl:right-[70px];
 }
 .gap-lr {
   @apply gap-l gap-r;
