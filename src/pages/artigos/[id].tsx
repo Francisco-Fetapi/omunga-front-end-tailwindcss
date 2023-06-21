@@ -1,4 +1,4 @@
-import CommentSection from "@/components/Articles/CommentSection";
+import CommentSection from "@/components/Comments/CommentSection";
 import ArticleThumbnail from "@/components/ArticleThumbnail/ArticleThumbnail";
 import Button from "@/components/Button/Button";
 import FollowButton from "@/components/Button/FollowButton";

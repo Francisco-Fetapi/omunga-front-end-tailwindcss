@@ -1,6 +1,7 @@
 import { Article } from "@/entities/Article";
 import { FaComments, FaThumbsUp } from "react-icons/fa";
 import Button from "../Button/Button";
+import ListComments from "./ListComments";
 
 interface CommentSectionProps {
   article: Article;
@@ -32,6 +33,10 @@ export default function CommentSection({ article }: CommentSectionProps) {
               </div>
               <span className="font-bold text-md">{article.comments}</span>
             </div>
+          </div>
+
+          <div className="my-12">
+            <ListComments />
           </div>
 
           <div>
